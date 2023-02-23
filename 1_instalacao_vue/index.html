@@ -10,7 +10,14 @@
     <script src="src/app.js" defer></script>
 </head>
 <body>
-<div id="app">Meu nome é: {{ nome }}, e tenho {{idade}} anos</div>
+<div id="app">
+    <p> Meu nome é: {{nome}} </p>
+    <form id="app-form">
+    <input type="text" v-model="campoNome" placeholder="Digite o seu nome">
+    <input type="submit" value="enviar" v-on:click="enviaFormulario">
+    </form>
+
+</div>
 </body>
 </html>
 
