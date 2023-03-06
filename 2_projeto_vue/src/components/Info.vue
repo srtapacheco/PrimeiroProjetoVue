@@ -11,6 +11,9 @@
       <li>C</li>
       <li>Dart</li>
     </ul>
+    <div>
+      <button @click="showEmail"> Mostrar email</button>
+    </div>
     <p v-show="mostrarEmail"> Mande uma mensagem para: {{email}}</p>
     <!-- v-bind serve pra url dinamicas -->
     <p> Acesse o portifolio <a v-bind:href="meu_link">aqui</a> </p>
@@ -31,6 +34,11 @@ export default {
             meu_link: "https://htmlcolorcodes.com/"
         };
     },
-    components: { Picture }
+    components: { Picture },
+    methods: {
+      showEmail(){
+        return this.mostrarEmail = !this.mostrarEmail
+      }
+    } 
 }
 </script>
