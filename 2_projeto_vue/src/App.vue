@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header></Header>
     <PrimeiroComponente> </PrimeiroComponente>
     <LifeCycle></LifeCycle>
     <Pessoa></Pessoa>
@@ -14,9 +15,11 @@
   import LifeCycle from "@/components/LifeCycle.vue";
   import Pessoa from "@/components/Pessoa.vue";
   import Form from "@/components/Form.vue";
+  import Header from "/home/karen/projetos/PrimeiroProjetoVue/2_projeto_vue/src/components/Header.vue";
   export default {
     name: 'App',
     components: {
+      Header,
       PrimeiroComponente,
       LifeCycle,
       Pessoa,
@@ -24,3 +27,19 @@
     }
   }
 </script>
+
+<!-- definicao global de estibilizacao da aplicacao -->
+<style>
+  body{
+    background-color: blueviolet;
+  }
+
+  a{
+    color: red;
+  }
+
+  .textoPortifolio{
+    background-color: gray;
+  }
+
+</style>

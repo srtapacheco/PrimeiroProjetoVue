@@ -16,7 +16,7 @@
     </div>
     <p v-show="mostrarEmail"> Mande uma mensagem para: {{email}}</p>
     <!-- v-bind serve pra url dinamicas -->
-    <p> Acesse o portifolio <a v-bind:href="meu_link">aqui</a> </p>
+    <p class="textoPortifolio"> Acesse o portifolio <a v-bind:href="meu_link">aqui</a> </p>
     <Picture> </Picture>
   </div>
 </template>
